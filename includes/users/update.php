@@ -2,15 +2,13 @@
 
 require '../../db/proteger.php';
 require __DIR__ . '/../../db/conexion.php';
-require '../../db/funciones.php';
-require '../../includes/actualizar_usuario.php';
+require '../../includes/funciones/usuarios/actualizar_usuario.php';
 
 
 $usuario = actualizar_usuario();
 
 $id = $_GET['id'];
 
-$errores = [];
 
 ?>
 

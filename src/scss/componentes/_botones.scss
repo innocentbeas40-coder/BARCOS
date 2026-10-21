@@ -1,8 +1,9 @@
 .boton {
 
-    background-color: blue;
-    color: white;
-    
+    background-color: #00fff0;
+    ;
+    color: rgb(0, 0, 0);
+
     padding: 2rem 7rem;
     font-size: 2.1rem;
     text-transform: uppercase;
@@ -12,48 +13,54 @@
     border: none;
     align-content: center;
     /* margin: auto; */
-    /* text-align: center ; */
+
 }
 
-.contenedor_boton{
+.contenedor_boton {
     text-align: center;
-    margin-top: 3rem ;
+    margin-top: 3rem;
 
 }
 
 //boton de crear usuario
 
-.contenedorB .boton{
-    background-color: blue;
+.contenedorB .boton {
+    background-color: #00fff0;
+    ;
     padding: .8rem .8rem;
     font-size: 1.2rem;
-    margin:1rem;
-    
+    margin: 1rem;
+
 
 }
 
 
-.contenedor_boton a{
+.contenedor_boton a {
     padding: 2rem 7rem;
 
 }
 
-td a.boton{
-    color: white;
+td a.boton {
+    color: rgb(0, 0, 0);
     padding: .3rem;
     font-size: 1.3rem;
 }
 
 
-.contenedor_boton{
+.contenedor_boton {
     text-align: center;
-    margin-top:3rem ;
+    margin-top: 3rem;
 
 }
-.contenedorB{
+
+.contenedorB {
     margin-bottom: 4rem;
     margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9rem;
+    margin: 2rem auto;
+    flex-wrap: wrap;
 }
-
-
 

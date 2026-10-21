@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require '../includes/iniciar_seccion.php';
+require 'includes/funciones/usuarios/iniciar_seccion.php';
 
 $errores = [];
 
@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ?>
 
         <fieldset>
-            <h3>inicia sección </h3>
+            <h3>inicia sesión </h3>
 
             <div class="contenedor_campos">
 

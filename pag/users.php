@@ -2,7 +2,7 @@
 
 require '../db/proteger.php';
 
-require '../includes/obtener_usuario.php';
+require '../includes/funciones/usuarios/obtener_usuario.php';
 
 if (isset($_GET['mensaje'])) {
 
@@ -33,11 +33,12 @@ $usuarios = obtener_usuarios();
 </head>
 
 <body>
-    <h1>conexión con MySqli</h1>
+    <h1 class="tituloP">USUARIOS</h1>
 
     <table border="2">
         <div class="contenedorB">
             <a class="boton" href="../form/FormUsuarios.php">Crear Usuario</a>
+            <a class="boton" href="dashboard.php">Volver al Dashboard</a>
         </div>
         <thead>
 
@@ -69,10 +70,7 @@ $usuarios = obtener_usuarios();
                     <td colspan="3"><?php echo $user['email'] ?></td>
                     <td colspan="3"><?php echo $user['telefono'] ?></td>
                     <td><a class="boton" href="../includes/users/update.php?id=<?php echo $user['id']; ?>">actualizar</a></td>
-                    <td><a class="boton" href="../includes/eliminar_usuario.php?id=<?php echo $user['id']; ?>" onclick="return confirm('¿Está seguro de que desea eliminar este usuario?');">eliminar</a></td>
-
-
-
+                    <td><a class="boton" href="../includes/funciones/usuarios/eliminar_usuario.php?id=<?php echo $user['id']; ?>" onclick="return confirm('¿Está seguro de que desea eliminar este usario?');">eliminar</a></td>
                 </tr>
 
             <?php

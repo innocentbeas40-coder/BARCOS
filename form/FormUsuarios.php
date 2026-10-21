@@ -1,7 +1,7 @@
 <?php
 
 require '../db/proteger.php';
-require '../includes/agregar_usuario.php';
+require '../includes/funciones/usuarios/agregar_usuario.php';
 
 
 
@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
 
                 <div class="campos">
-                    <input type="input" name="c_contraseña" placeholder="Confirma tu Contraseña">
+                    <input type="password" name="c_contraseña" placeholder="Confirma tu Contraseña">
                 </div>
 
             </div>
@@ -77,13 +77,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class=" contenedor_boton">
             <a class="boton" href="../pag/users.php">volver atrás</a>
         </div>
-
-
-
-
-
-
-
 
     </form>
 </body>

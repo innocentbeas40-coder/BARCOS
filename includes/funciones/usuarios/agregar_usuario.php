@@ -4,7 +4,7 @@
 function agregar_usuario()
 {
     // Importamos la conexión
-    require '../db/conexion.php';
+    require __DIR__ . '/../../../db/conexion.php';
 
     // Arreglo donde se guardarán los mensajes de error
     $errores = [];

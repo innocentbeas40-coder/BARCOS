@@ -1,13 +1,13 @@
 <?php
 
 
-require __DIR__ . '/../db/conexion.php';
+require __DIR__ . '/../../../db/conexion.php';
 
 
 
 function actualizar_usuario()
 {
-    require __DIR__ . '/../db/conexion.php';
+    require __DIR__ . '/../../../db/conexion.php';
 
     $id = $_GET['id'];
 
@@ -20,7 +20,7 @@ function actualizar_usuario()
     return $usuario;
 }
 
-$usuario = actualizar_usuario();
+
 
 $id = $_GET['id'];
 
